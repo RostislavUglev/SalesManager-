@@ -25,17 +25,17 @@ public class SalesManager {
         return min;
     }
 
-public long average() {
+    public long average() {
         long allSales = 0;
-        for(long sale : sales) {
-            allSales=allSales+sale;
+        for (long sale : sales) {
+            allSales = allSales + sale;
         }
         int salesQuantity = sales.length;
         long max = max();
         long min = min();
-        long average = (allSales-max-min)/(salesQuantity-2);
+        long average = (allSales - max - min) / (salesQuantity - 2);
 
         return average;
-}
+    }
 
 }
